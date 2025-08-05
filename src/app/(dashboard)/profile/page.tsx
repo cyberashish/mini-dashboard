@@ -7,10 +7,12 @@ import {
 
 export default function ProfilePage() {
   return (
-    <Card className="w-full max-w-sm mx-auto lg:px-0 px-6">
+    <div className="lg:px-0 px-6">
+    <Card className="w-full max-w-sm mx-auto">
       <CardContent>
        <Profile/>
       </CardContent>
     </Card>
+    </div>
   )
 }
