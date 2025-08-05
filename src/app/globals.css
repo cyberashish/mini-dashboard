@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: 255, 255, 255;
+  --primary: 93, 135, 255;
+  --muted: 61, 67, 74 , 0.9;
+  --lightgray: 134, 144, 156;
+  --dark: 57, 68, 68;
+  --border: 227 , 227 , 227;
+  --warning: 248, 194, 10;
+  --success: 54, 201, 108;
+  --error: 255, 102, 146;
+}
+
+@theme inline {
+  --color-background: rgba(var(--background));
+  --color-primary: rgba(var(--primary));
+  --color-muted: rgba(var(--muted));
+  --color-lightgray: rgba(var(--lightgray));
+  --color-dark: rgba(var(--dark));
+  --color-border: rgba(var(--border));
+  --color-subtlebg: rgba(var(--subtlebg));
+  --color-warning: rgba(var(--warning));
+  --color-success: rgba(var(--success));
+  --color-error: rgba(var(--error));
+
+}
+
+.dark {
+  --background: 44 , 80 , 80;
+  --surface: 27 ,  50 ,  50;
+  --primary: 93, 135, 255;
+  --dark: 255, 255, 255 , 0.9;
+  --muted: 255, 255, 255 , 0.7;
+  --lightgray: 255, 255, 255 , 0.4;
+  --border: 225 , 225 , 225 , 0.2;
+}
+
+button{
+  @apply cursor-pointer;
+}
